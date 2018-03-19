@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#f53d68</color>
+    <color name="colorIndicator">#6a2b7c</color>
+    <color name="green">#61c4ab</color>
+    <color name="pink">#f53d68</color>
+    <color name="violet">#6a2b7c</color>
+    <color name="fbloginbg">#3755a1</color>
+    <color name="lightgray">#b2b2b2</color>
+    <color name="activebullets">#6a2b7c</color>
+    <color name="inactivebullets">#c7b3cc</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#d1395c</color>
+    <color name="dot_dark_screen2">#14a895</color>
+    <color name="dot_dark_screen3">#2278d4</color>
+    <color name="dot_dark_screen4">#a854d4</color>
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">@color/activebullets</color>
+    <color name="dot_light_screen2">@color/activebullets</color>
+    <color name="dot_light_screen3">@color/activebullets</color>
+    <color name="dot_light_screen4">@color/activebullets</color>
+    <array name="array_dot_active">
+        <item>@color/activebullets</item>
+        <item>@color/activebullets</item>
+        <item>@color/activebullets</item>
+        <item>@color/activebullets</item>
+    </array>
+    <array name="array_dot_inactive">
+        <item>@color/inactivebullets</item>
+        <item>@color/inactivebullets</item>
+        <item>@color/inactivebullets</item>
+        <item>@color/inactivebullets</item>
+    </array>
+</resources>

@@ -1,0 +1,716 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:id="@+id/ll1"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="4.5"
+                    android:elevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="10">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_margin="5dp"
+                            android:layout_weight="8.5"
+                            android:orientation="vertical"
+                            android:weightSum="10">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/ivFrontView"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/cam_holder" />
+
+                                <ImageView
+                                    android:id="@+id/ivCloseOneFront"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="3dp"
+                                    android:layout_marginTop="2dp"
+                                    android:src="@drawable/close_dialog"
+                                    android:visibility="invisible" />
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <com.chrysalis.widgets.TextViewBold
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1.5"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text="Front View *"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="4.5"
+                    android:elevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="10">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_margin="5dp"
+                            android:layout_weight="8.5"
+                            android:orientation="vertical"
+                            android:weightSum="10">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/ivBackView"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/cam_holder" />
+
+                                <ImageView
+                                    android:id="@+id/ivCloseTwoBack"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="3dp"
+                                    android:layout_marginTop="2dp"
+                                    android:src="@drawable/close_dialog"
+                                    android:visibility="invisible" />
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <com.chrysalis.widgets.TextViewBold
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1.5"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text="Back View *"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <LinearLayout
+                android:id="@+id/ll2"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="4.5"
+                    android:elevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="10">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_margin="5dp"
+                            android:layout_weight="8.5"
+                            android:orientation="vertical"
+                            android:weightSum="10">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/ivaddone"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/cam_holder" />
+
+                                <ImageView
+                                    android:id="@+id/ivCloseThree"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="3dp"
+                                    android:layout_marginTop="2dp"
+                                    android:src="@drawable/close_dialog"
+                                    android:visibility="invisible" />
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <com.chrysalis.widgets.TextViewBold
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1.5"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text="Additional"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2" />
+
+                <LinearLayout
+                    android:id="@+id/ll2_img2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="4.5"
+                    android:elevation="5dp"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="10">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_margin="5dp"
+                            android:layout_weight="8.5"
+                            android:orientation="vertical"
+                            android:weightSum="10">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/ivaddtwo"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/cam_holder" />
+
+                                <ImageView
+                                    android:id="@+id/ivCloseFour"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="3dp"
+                                    android:layout_marginTop="2dp"
+                                    android:src="@drawable/close_dialog"
+                                    android:visibility="invisible" />
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <com.chrysalis.widgets.TextViewBold
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1.5"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text="Additional"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <LinearLayout
+                android:id="@+id/ll3"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2" />
+
+                <LinearLayout
+                    android:id="@+id/ll3_img1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="4.5"
+                    android:elevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="10">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_margin="5dp"
+                            android:layout_weight="8.5"
+                            android:orientation="vertical"
+                            android:weightSum="10">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/ivaddThreeNew"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/cam_holder" />
+
+                                <ImageView
+                                    android:id="@+id/ivCloseFive"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="3dp"
+                                    android:layout_marginTop="2dp"
+                                    android:src="@drawable/close_dialog"
+                                    android:visibility="invisible" />
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <com.chrysalis.widgets.TextViewBold
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1.5"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text="Additional"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2" />
+
+                <LinearLayout
+                    android:id="@+id/ll3_img2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="4.5"
+                    android:elevation="5dp"
+                    android:visibility="invisible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="10">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_margin="5dp"
+                            android:layout_weight="8.5"
+                            android:orientation="vertical"
+                            android:weightSum="10">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/ivaddFourNew"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/cam_holder" />
+
+                                <ImageView
+                                    android:id="@+id/ivCloseSix"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="3dp"
+                                    android:layout_marginTop="2dp"
+                                    android:src="@drawable/close_dialog"
+                                    android:visibility="invisible" />
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <com.chrysalis.widgets.TextViewBold
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1.5"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text="Additional"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <LinearLayout
+                android:id="@+id/ll4"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2" />
+
+                <LinearLayout
+                    android:id="@+id/ll4_img1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="4.5"
+                    android:elevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="10">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_margin="5dp"
+                            android:layout_weight="8.5"
+                            android:orientation="vertical"
+                            android:weightSum="10">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/ivaddFive"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/cam_holder" />
+
+                                <ImageView
+                                    android:id="@+id/ivCloseSeven"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="3dp"
+                                    android:layout_marginTop="2dp"
+                                    android:src="@drawable/close_dialog"
+                                    android:visibility="invisible" />
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <com.chrysalis.widgets.TextViewBold
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1.5"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text="Additional"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2" />
+
+                <LinearLayout
+                    android:id="@+id/ll4_img2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="4.5"
+                    android:elevation="5dp"
+                    android:visibility="invisible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="10">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_margin="5dp"
+                            android:layout_weight="8.5"
+                            android:orientation="vertical"
+                            android:weightSum="10">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/ivaddSix"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/cam_holder" />
+
+                                <ImageView
+                                    android:id="@+id/ivCloseEight"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="3dp"
+                                    android:layout_marginTop="2dp"
+                                    android:src="@drawable/close_dialog"
+                                    android:visibility="invisible" />
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <com.chrysalis.widgets.TextViewBold
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1.5"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text="Additional"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <LinearLayout
+                android:id="@+id/ll5"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2" />
+
+                <LinearLayout
+                    android:id="@+id/ll5_img1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="4.5"
+                    android:elevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="10">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_margin="5dp"
+                            android:layout_weight="8.5"
+                            android:orientation="vertical"
+                            android:weightSum="10">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/ivaddSeven"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/cam_holder" />
+
+                                <ImageView
+                                    android:id="@+id/ivCloseNine"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="3dp"
+                                    android:layout_marginTop="2dp"
+                                    android:src="@drawable/close_dialog"
+                                    android:visibility="invisible" />
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <com.chrysalis.widgets.TextViewBold
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1.5"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text="Additional"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2" />
+
+                <LinearLayout
+                    android:id="@+id/ll5_img2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="4.5"
+                    android:elevation="5dp"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="10">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_margin="5dp"
+                            android:layout_weight="8.5"
+                            android:orientation="vertical"
+                            android:weightSum="10">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/ivaddEight"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/cam_holder" />
+
+                                <ImageView
+                                    android:id="@+id/ivCloseTen"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="3dp"
+                                    android:layout_marginTop="5dp"
+                                    android:src="@drawable/close_dialog"
+                                    android:visibility="invisible" />
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <com.chrysalis.widgets.TextViewBold
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1.5"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text="Additional"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

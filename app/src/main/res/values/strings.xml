@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Chrysalis</string>
+    <string name="get_started">Skip</string>
+    <string name="loginstring">Log in to your account</string>
+    <string name="signupbacktext">Oh wait, I do have an account</string>
+    <string name="forgotpassbacktext">Oh wait, I remember my password!</string>
+    <string name="forgotpass">Please enter your email address and we will send account details over!</string>
+    <string name="gotitdialog">Before you begin listing your amazing costumes,Please know that this app will only allow you to do just that.\nTo access all information and settings, please visit our desktop site at \n www.chrysaliscostumes.com</string>
+    <string name="editCostume">Please enter a maximum of <b>10</b> keywords to describe the categories in which your costume could belong to:</string>
+    <string name="searchtxt"> Tip: Have a specific costume? To increase your chances of making a sale, input the appropriate keyword with our existing list of categories <b>here</b> </string>
+    <string name="donatefirst"> Chrysalis charges 3% of transaction fee on the sale of every costume.</string>
+    <string name="donatesecond"> However, if you donate 5% or more of your sale to charity. We will walve our transaction fee to match your contribution.</string>
+    <string name="donatethird">By chossing to donate, I agree and accept Chrysalis Terms and Conditions.</string>
+    <!-- <string name="successtxt">Thanks you for listing your costume with Chrysalis! \n Your costume has been successfully uploaded \n Your Costume will be available after admin approval.</string>
+ -->
+    <string name="successtxt">Thanks you for listing your costume with Chrysalis!</string>
+    <string name="Viewlistingbrowser"><u> View listing on browser</u></string>
+    <!--<string name="facebook_app_id">177503669443280</string>-->
+    <string name="facebook_app_id">262409224262241</string>
+    <string name="NoNetworkMsg">No Network!please check your network connection.</string>
+    <string name="noEmailWithFacebook">Ohh wait, your email is not associate with your Facebook account.\nPlease enter your email</string>
+    <string name="loginhelp"><u>Help! I forgot my password</u></string>
+    <string name="logindonthaveaccount"><u>Don\'t have an account? Register!</u></string>
+    <string name="listingucreate">Listing you create will appear here</string>
+    <string name="strlogoutHeader">Log out?</string>
+    <string name="strlogoutDetails">Do you really want to log out?</string>
+    <string name="strDeleteHeader">Delete Costume</string>
+    <string name="strDeleteDetails">Do you really want to delete this costume?</string>
+    <string name="Permissionheader"> Permission </string>
+    <string name="grantpermission"> Grant</string>
+    <string name="cancelpermission"> Cancel</string>
+    <string name="storagePermission">Chrysalis required camera and storage permissions</string>
+</resources>

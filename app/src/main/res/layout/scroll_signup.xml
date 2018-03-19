@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="6"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="9.4"
+                    android:focusable="false"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical"
+                    android:weightSum="10">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3" />
+
+                        <ImageView
+                            android:id="@+id/imageView"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:src="@drawable/chry_logo" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.2" />
+
+                    <com.chrysalis.widgets.TextViewBold
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:gravity="center"
+                        android:text="Register for an account"
+                        android:textColor="@color/activebullets" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.1" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4.8"
+                            android:orientation="vertical"
+                            android:weightSum="10">
+
+                            <com.chrysalis.widgets.TextViewBold
+                                android:id="@+id/textViewBold2"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="4"
+                                android:gravity="left|center|bottom"
+                                android:text="First Name"
+                                android:textColor="@color/black" />
+
+                            <EditText
+                                android:id="@+id/etFirstName"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="5.5"
+                                android:background="@drawable/edt_cellborder"
+                                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                                android:gravity="left|center"
+                                android:imeOptions="actionNext"
+                                android:nextFocusRight="@+id/etLastName"
+                                android:paddingLeft="7dp"
+                                android:singleLine="true" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.4" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4.8"
+                            android:orientation="vertical"
+                            android:weightSum="10">
+
+                            <com.chrysalis.widgets.TextViewBold
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="4"
+                                android:gravity="left|center|bottom"
+                                android:text="Last Name"
+                                android:textColor="@color/black" />
+
+                            <EditText
+                                android:id="@+id/etLastName"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="5.5"
+                                android:background="@drawable/edt_cellborder"
+                                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                                android:gravity="left|center"
+                                android:inputType="textEmailAddress"
+                                android:paddingLeft="7dp"
+                                android:singleLine="true" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <!--    <com.chrysalis.widgets.TextViewBold
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:gravity="left|center|bottom"
+                        android:text="Email"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.2" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="1dp"
+                            android:layout_weight="0.8"
+                            android:background="@drawable/edt_cellborder"
+                            android:inputType="textEmailAddress"
+                            android:paddingLeft="5dp"
+                            android:singleLine="true" />
+
+                    </LinearLayout>-->
+                    <com.chrysalis.widgets.TextViewBold
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:gravity="left|center|bottom"
+                        android:text="Username"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.2" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <EditText
+                            android:id="@+id/etUserName"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="1dp"
+                            android:layout_weight="0.8"
+                            android:background="@drawable/edt_cellborder"
+                            android:gravity="left|center"
+                            android:inputType="textEmailAddress"
+                            android:paddingLeft="7dp"
+                            android:singleLine="true" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.2" />
+
+                    <com.chrysalis.widgets.TextViewBold
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:gravity="left|center|bottom"
+                        android:text="Email"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.2" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <EditText
+                            android:id="@+id/etEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="1dp"
+                            android:background="@drawable/edt_cellborder"
+                            android:gravity="left|center"
+                            android:inputType="textEmailAddress"
+                            android:paddingLeft="7dp"
+                            android:singleLine="true" />
+                    </LinearLayout>
+
+                    <com.chrysalis.widgets.TextViewBold
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:gravity="left|center|bottom"
+                        android:text="Password"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.2" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/edt_cellborder"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <com.scottyab.showhidepasswordedittext.ShowHidePasswordEditText
+                            android:id="@+id/etPassword"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="9.5"
+                            android:backgroundTint="@color/white"
+                            android:gravity="left|center"
+                            android:inputType="textPassword"
+                            android:maxLength="15"
+                            android:paddingLeft="7dp"
+                            android:singleLine="true" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="15dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/chkBox"
+                            android:layout_width="29dip"
+                            android:layout_height="29dip"
+                            android:button="@drawable/checkbox_selector"
+                            android:gravity="center" />
+
+                        <TextView
+                            android:id="@+id/txtChkBox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="15dp" />
+
+                    <Button
+                        android:id="@+id/btnSignp"
+                        android:layout_width="match_parent"
+                        android:layout_height="46dp"
+                        android:background="@drawable/btn_bg"
+                        android:text="Register"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white" />
+
+                    <com.chrysalis.widgets.TextViewBold
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:gravity="center"
+                        android:text="OR"
+                        android:textColor="@color/black" />
+                    <!--  <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@drawable/btn_facebook_bg"
+                        android:text="Register With Facebook"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white" />
+-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:orientation="vertical"
+                        android:weightSum="10">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp">
+
+                            <com.facebook.login.widget.LoginButton
+                                android:id="@+id/login_button"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone" />
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/btn_facebook_bg"
+                                android:orientation="horizontal"
+                                android:weightSum="10">
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:scaleType="fitCenter" />
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:padding="12dp"
+                                    android:scaleType="centerInside"
+                                    android:src="@drawable/fbimgnew" />
+
+                                <Button
+                                    android:id="@+id/fbRegister"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="6"
+                                    android:background="@color/fbloginbg"
+                                    android:gravity="left|center"
+                                    android:onClick="FacebookSignupClick"
+                                    android:text="Register With Facebook"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/white" />
+                            </LinearLayout>
+                            <!--     <Button
+                                android:id="@+id/fbRegister"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:onClick="FacebookSignupClick"
+                                android:text="Register With Facebook"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />-->
+                        </FrameLayout>
+                    </LinearLayout>
+                    <!-- <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@drawable/btn_facebook_bg"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2.3" />
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:src="@drawable/fbicon" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="6"
+                            android:gravity="left|center"
+                            android:text="Register With Facebook"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white" />
+
+
+                    </LinearLayout>
+-->
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                android:orientation="vertical"
+                android:weightSum="10">
+
+                <me.crosswall.lib.coverflow.core.PagerContainer
+                    android:id="@+id/pager_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_weight="9.5">
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/overlap_pager"
+                        android:layout_width="180dp"
+                        android:layout_height="220dp"
+                        android:layout_gravity="center"
+                        android:elevation="10dp" />
+                </me.crosswall.lib.coverflow.core.PagerContainer>
+
+                <com.viewpagerindicator.CirclePageIndicator
+                    android:id="@+id/indicator"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="bottom"
+                    android:padding="10dip"
+                    app:centered="true"
+                    app:fillColor="@color/colorIndicator"
+                    app:snap="false" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.5"
+                android:orientation="vertical"
+                android:weightSum="10">
+
+                <com.chrysalis.widgets.TextViewBold
+                    android:id="@+id/tvMainCostumeName"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2.5"
+                    android:gravity="center"
+                    android:textColor="@color/black" />
+
+                <com.chrysalis.widgets.TextViewBold
+                    android:id="@+id/tvCostumeMainPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2.5"
+                    android:gravity="center"
+                    android:text="£380"
+                    android:textColor="@color/pink" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="22dip"
+                    android:layout_height="29dip"
+                    android:layout_gravity="center"
+                    android:src="@drawable/flim_roll" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:text="Film Quality"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <com.chrysalis.widgets.TextViewBold
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3.5"
+                    android:gravity="left|center"
+                    android:paddingLeft="5dp"
+                    android:text="Item Conditions:"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tvItemConditionsNew"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7"
+                    android:gravity="center|left"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <com.chrysalis.widgets.TextViewBold
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3.5"
+                    android:gravity="left|center"
+                    android:paddingLeft="5dp"
+                    android:text="Size:"
+                    android:textColor="@color/black" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvGender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:id="@+id/tvSizeDetails"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="10">
+
+                <com.chrysalis.widgets.TextViewBold
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3.5"
+                    android:gravity="left|center"
+                    android:paddingLeft="5dp"
+                    android:text="Ships To:"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tvShipsToDetails"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7"
+                    android:gravity="center|left"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="10">
+
+                <com.chrysalis.widgets.TextViewBold
+                    android:id="@+id/textViewBold4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3.5"
+                    android:gravity="left|center"
+                    android:paddingLeft="5dp"
+                    android:text="Delivery:"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tvDeliveryTo"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7"
+                    android:gravity="center|left" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <LinearLayout
+                android:id="@+id/linearBodyDim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <com.chrysalis.widgets.TextViewRegular
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="left|center"
+                    android:text="Body and Dimentions"
+                    android:textColor="@color/black" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <EditText
+                        android:id="@+id/etHightFt"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.2"
+                        android:background="@drawable/edt_cellborder"
+                        android:digits="1234567890."
+                        android:editable="false"
+                        android:gravity="center"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:maxLength="6"
+                        android:nextFocusRight="@+id/etWidth"
+                        android:singleLine="true"
+                        android:textColor="@color/black" />
+
+                    <com.chrysalis.widgets.TextViewRegular
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.8"
+                        android:gravity="center"
+                        android:text="ft"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/etHightIn"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.2"
+                        android:background="@drawable/edt_cellborder"
+                        android:digits="1234567890."
+                        android:editable="false"
+                        android:gravity="center"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:maxLength="6"
+                        android:nextFocusRight="@+id/etHeight"
+                        android:singleLine="true"
+                        android:textColor="@color/black" />
+
+                    <com.chrysalis.widgets.TextViewRegular
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.8"
+                        android:gravity="center"
+                        android:text="in"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/etWeightLbs"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.2"
+                        android:background="@drawable/edt_cellborder"
+                        android:digits="1234567890."
+                        android:editable="false"
+                        android:gravity="center"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:maxLength="6"
+                        android:singleLine="true"
+                        android:textColor="@color/black" />
+
+                    <com.chrysalis.widgets.TextViewRegular
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.8"
+                        android:gravity="center"
+                        android:text="lbs"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/etChestIn"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.2"
+                        android:background="@drawable/edt_cellborder"
+                        android:digits="1234567890."
+                        android:editable="false"
+                        android:gravity="center"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:maxLength="6"
+                        android:singleLine="true"
+                        android:textColor="@color/black" />
+
+                    <com.chrysalis.widgets.TextViewRegular
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.8"
+                        android:gravity="center"
+                        android:text="in"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/etWeistLbs"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.2"
+                        android:background="@drawable/edt_cellborder"
+                        android:digits="1234567890."
+                        android:editable="false"
+                        android:gravity="center"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:maxLength="6"
+                        android:singleLine="true"
+                        android:textColor="@color/black" />
+
+                    <com.chrysalis.widgets.TextViewRegular
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.8"
+                        android:gravity="center"
+                        android:text="lbs"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <com.chrysalis.widgets.TextViewRegular
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:text="Height"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center" />
+
+                    <com.chrysalis.widgets.TextViewRegular
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.3"
+                        android:gravity="center"
+                        android:text="Weight"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:gravity="center" />
+
+                    <com.chrysalis.widgets.TextViewRegular
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.3"
+                        android:gravity="center"
+                        android:text="Chest"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:gravity="center" />
+
+                    <com.chrysalis.widgets.TextViewRegular
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.3"
+                        android:gravity="center"
+                        android:text="Waist"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/lightgray" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightgray" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <LinearLayout
+                android:id="@+id/llCostumeDescription"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <com.chrysalis.widgets.TextViewBold
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8"
+                    android:gravity="left|center"
+                    android:paddingLeft="5dp"
+                    android:text="Costume Description"
+                    android:textColor="@color/activebullets" />
+
+                <ImageView
+                    android:id="@+id/ivCostume"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:padding="6dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/arrup" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvCostumeDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|center"
+                android:padding="7dp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/llFAQ"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <com.chrysalis.widgets.TextViewBold
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8"
+                    android:gravity="left|center"
+                    android:paddingLeft="5dp"
+                    android:text="FAQ"
+                    android:textColor="@color/activebullets" />
+
+                <ImageView
+                    android:id="@+id/ivFAQ"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:padding="6dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/arrup" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvFAQ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|center"
+                android:padding="7dp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/llSellerInfo"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <com.chrysalis.widgets.TextViewBold
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8"
+                    android:gravity="left|center"
+                    android:paddingLeft="5dp"
+                    android:text="Seller Information"
+                    android:textColor="@color/activebullets" />
+
+                <ImageView
+                    android:id="@+id/ivSeller"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:padding="6dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/arrup" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvSellerInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|center"
+                android:padding="7dp"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

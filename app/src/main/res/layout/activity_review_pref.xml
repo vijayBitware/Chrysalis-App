@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <ImageView
+            android:id="@+id/ivBackReview"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:src="@drawable/back" />
+
+        <com.chrysalis.widgets.TextViewBold
+            android:id="@+id/textViewBold5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:gravity="center"
+            android:text="Review Preferences"
+            android:textColor="@color/black" />
+    </LinearLayout>
+    <!-- <include
+         layout="@layout/scroll_review_preferences"
+         android:layout_width="match_parent"
+         android:layout_height="0dp"
+         android:layout_weight="9" />-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="9.4"
+                    android:focusable="false"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical"
+                    android:weightSum="10">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <com.chrysalis.widgets.TextViewBold
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:gravity="left|center"
+                            android:text="Handling Time"
+                            android:textColor="@color/activebullets" />
+
+                        <LinearLayout
+                            android:id="@+id/llHandlingtime"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="7"
+                            android:orientation="horizontal"
+                            android:weightSum="10">
+
+                            <com.chrysalis.widgets.TextViewRegular
+                                android:id="@+id/tvHandlingTime"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="8.5"
+                                android:gravity="left|center"
+                                android:hint="Select Time"
+                                android:textColor="@color/black" />
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.5"
+                                android:scaleType="center"
+                                android:src="@drawable/arr_down" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/lightgray" />
+
+                    <com.chrysalis.widgets.TextViewBold
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:gravity="left|center"
+                        android:text="Return Policy"
+                        android:textColor="@color/activebullets" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/green_cell_border"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="2dp"
+                            android:orientation="horizontal"
+                            android:weightSum="10">
+
+                            <com.chrysalis.widgets.TextViewBold
+                                android:id="@+id/tvReturnAccepted"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="5"
+                                android:background="@color/green"
+                                android:gravity="center"
+                                android:text="Returns Accepted"
+                                android:textColor="@color/white" />
+
+                            <com.chrysalis.widgets.TextViewBold
+                                android:id="@+id/tvNoReturn"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="5"
+                                android:gravity="center"
+                                android:text="Returns Not Accepted"
+                                android:textColor="@color/green" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="15dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/lightgray" />
+
+                    <com.chrysalis.widgets.TextViewBold
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:gravity="left|center"
+                        android:text="Donate a portion to charity"
+                        android:textColor="@color/activebullets" />
+
+                    <com.chrysalis.widgets.TextViewRegular
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="left|center"
+                        android:text="@string/donatefirst" />
+
+                    <com.chrysalis.widgets.TextViewRegular
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:gravity="left|center"
+                        android:text="@string/donatesecond" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
+
+                    <com.chrysalis.widgets.TextViewRegular
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="left|center"
+                        android:text="@string/donatethird" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <com.chrysalis.widgets.TextViewBold
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:gravity="left|center"
+                            android:text="Donation Amount"
+                            android:textColor="@color/activebullets" />
+
+                        <com.chrysalis.widgets.TextViewBold
+                            android:id="@+id/tvDonatoinAmt"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:gravity="left|center"
+                            android:text="$ 0.0"
+                            android:textColor="@color/pink" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:background="@drawable/plusminus"
+                            android:orientation="horizontal"
+                            android:weightSum="10">
+
+                            <TextView
+                                android:id="@+id/tvMinus"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3.3" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3.3"
+                                android:orientation="horizontal"
+                                android:weightSum="10">
+
+                                <TextView
+                                    android:id="@+id/tvPercentageVal"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="6"
+                                    android:gravity="right|center"
+                                    android:paddingRight="7dp"
+                                    android:text="0"
+                                    android:textColor="@color/black" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="5"
+                                    android:gravity="left|center"
+                                    android:text="%"
+                                    android:textColor="@color/black" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/tvPlus"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3.3" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/lightgray" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
+
+                    <com.chrysalis.widgets.TextViewBold
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:gravity="left|center"
+                        android:text="Organization of choice"
+                        android:textColor="@color/black" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:orientation="vertical"
+                            android:weightSum="10">
+
+                            <ImageView
+                                android:id="@+id/ivCharOne"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="10"
+                                android:background="@drawable/orgemptyframe"
+                                android:padding="7dp"
+                                android:scaleType="centerInside" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.3" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:orientation="vertical"
+                            android:weightSum="10">
+
+                            <ImageView
+                                android:id="@+id/ivCharTwo"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="10"
+                                android:background="@drawable/orgemptyframe"
+                                android:padding="7dp"
+                                android:scaleType="centerInside" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.3" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:orientation="vertical"
+                            android:weightSum="10">
+
+                            <ImageView
+                                android:id="@+id/ivCharThree"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="10"
+                                android:background="@drawable/orgemptyframe"
+                                android:padding="7dp"
+                                android:scaleType="centerInside" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:orientation="vertical"
+                            android:weightSum="10">
+
+                            <ImageView
+                                android:id="@+id/ivCharFour"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="10"
+                                android:background="@drawable/orgemptyframe"
+                                android:padding="7dp"
+                                android:scaleType="centerInside" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.3" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:orientation="vertical"
+                            android:weightSum="10">
+
+                            <ImageView
+                                android:id="@+id/ivCharFive"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="10"
+                                android:background="@drawable/orgemptyframe"
+                                android:padding="7dp"
+                                android:scaleType="centerInside" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.3" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:orientation="vertical"
+                            android:weightSum="10">
+
+                            <ImageView
+                                android:id="@+id/ivCharSix"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="10"
+                                android:background="@drawable/orgemptyframe"
+                                android:padding="7dp"
+                                android:scaleType="centerInside" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/lightgray" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
+
+                    <com.chrysalis.widgets.TextViewBold
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:gravity="left|center"
+                        android:text="Suggestion for another charity organization"
+                        android:textColor="@color/activebullets" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <EditText
+                            android:id="@+id/etSuggestedCharityOrg"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="10"
+                            android:background="@drawable/edt_cellborder"
+                            android:gravity="left|top"
+                            android:paddingLeft="5dp"
+                            android:singleLine="true"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp" />
+
+                    <Button
+                        android:id="@+id/btnFinishedReview"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@drawable/btn_bg"
+                        android:text="I'm Finished!"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="15dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+
+

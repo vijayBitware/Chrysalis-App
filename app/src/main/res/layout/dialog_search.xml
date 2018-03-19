@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@android:color/white">
+
+        <com.chrysalis.widgets.TextViewBold
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Chrysalis Category"
+            android:textColor="@color/activebullets"
+            android:textSize="@dimen/_16sdp" />
+
+        <com.chrysalis.widgets.TextViewBold
+            android:id="@+id/tvSubTitle1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTitle"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:gravity="center"
+            android:text="Cosplay"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:id="@+id/rl1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvSubTitle1"
+            android:layout_margin="@dimen/_5sdp"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:id="@+id/llLeft1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:orientation="vertical"
+                android:paddingLeft="5dp"></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llRight1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:orientation="vertical"
+                android:paddingLeft="5dp"></LinearLayout>
+        </LinearLayout>
+
+        <com.chrysalis.widgets.TextViewBold
+            android:id="@+id/tvSubTitle2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl1"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:gravity="center"
+            android:text="Unique Fashion"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:id="@+id/rl2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvSubTitle2"
+            android:layout_margin="@dimen/_5sdp"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:id="@+id/llLeft2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:orientation="vertical"
+                android:paddingLeft="5dp"></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llRight2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:orientation="vertical"
+                android:paddingLeft="5dp"></LinearLayout>
+        </LinearLayout>
+
+        <com.chrysalis.widgets.TextViewBold
+            android:id="@+id/tvSubTitle3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl2"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:gravity="center"
+            android:text="Activities"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:id="@+id/rl3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvSubTitle3"
+            android:layout_margin="@dimen/_5sdp"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:id="@+id/llLeft3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:orientation="vertical"
+                android:paddingLeft="5dp"></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llRight3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:orientation="vertical"
+                android:paddingLeft="5dp"></LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/closeCategory"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignTop="@+id/relativeLayout"
+        android:layout_margin="@dimen/_10sdp"
+        android:src="@drawable/close_dialog" />
+</RelativeLayout>

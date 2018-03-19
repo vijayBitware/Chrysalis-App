@@ -1,0 +1,1117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="9.4"
+                    android:focusable="false"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical"
+                    android:weightSum="10">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/lightgray" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <com.chrysalis.widgets.TextViewBold
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:gravity="left|center"
+                            android:text="Costume Name"
+                            android:textColor="@color/activebullets" />
+
+                        <EditText
+                            android:id="@+id/etCostumeName"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="6"
+                            android:background="@drawable/edt_cellborder"
+                            android:ellipsize="end"
+                            android:gravity="left|center"
+                            android:hint="Dark Knight Joker Cosplay"
+                            android:lines="1"
+                            android:paddingLeft="5dp"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textSize="17sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/lightgray" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <com.chrysalis.widgets.TextViewBold
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:gravity="left|center"
+                            android:text="Category"
+                            android:textColor="@color/activebullets" />
+
+                        <LinearLayout
+                            android:id="@+id/llCategory"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="6"
+                            android:orientation="horizontal"
+                            android:weightSum="10">
+
+                            <com.chrysalis.widgets.TextViewRegular
+                                android:id="@+id/tvCostumeCategory"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="8.5"
+                                android:gravity="center|left"
+                                android:hint="Select Category"
+                                android:textColor="@color/black" />
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.5"
+                                android:scaleType="center"
+                                android:src="@drawable/arr_down" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/lightgray" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <com.chrysalis.widgets.TextViewBold
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:gravity="left|center"
+                            android:text="Subcategory"
+                            android:textColor="@color/activebullets" />
+
+                        <LinearLayout
+                            android:id="@+id/llTheme"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="6"
+                            android:orientation="horizontal"
+                            android:weightSum="10">
+
+                            <com.chrysalis.widgets.TextViewRegular
+                                android:id="@+id/tvCostumeTheme"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="8.5"
+                                android:gravity="left|center"
+                                android:hint="Select Theme"
+                                android:textColor="@color/black" />
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.5"
+                                android:scaleType="center"
+                                android:src="@drawable/arr_down" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/lightgray" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
+
+                    <com.chrysalis.widgets.TextViewBold
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:gravity="left|center"
+                        android:text="Sex"
+                        android:textColor="@color/activebullets" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp" />
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/llSexbg"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/green_cell_border"
+                            android:orientation="horizontal"
+                            android:weightSum="10">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:padding="2dp"
+                                android:weightSum="10">
+
+                                <com.chrysalis.widgets.TextViewBold
+                                    android:id="@+id/tvSexMale"
+                                    android:layout_width="60dip"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="Mens"
+                                    android:textColor="@color/green" />
+
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/green" />
+
+                                <com.chrysalis.widgets.TextViewBold
+                                    android:id="@+id/tvSexFemale"
+                                    android:layout_width="60dip"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="Womens"
+                                    android:textColor="@color/green" />
+
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/green" />
+
+                                <com.chrysalis.widgets.TextViewBold
+                                    android:id="@+id/tvBoys"
+                                    android:layout_width="60dip"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="Boys"
+                                    android:textColor="@color/green" />
+
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/green" />
+
+                                <com.chrysalis.widgets.TextViewBold
+                                    android:id="@+id/tvGirls"
+                                    android:layout_width="60dip"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="Girls"
+                                    android:textColor="@color/green" />
+
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/green" />
+
+                                <com.chrysalis.widgets.TextViewBold
+                                    android:id="@+id/tvBabies"
+                                    android:layout_width="60dip"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="Babies"
+                                    android:textColor="@color/green" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <com.chrysalis.widgets.TextViewBold
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:gravity="left|center"
+                            android:text="Size"
+                            android:textColor="@color/activebullets" />
+
+                        <LinearLayout
+                            android:id="@+id/llSize"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="6"
+                            android:orientation="horizontal"
+                            android:weightSum="10">
+
+                            <com.chrysalis.widgets.TextViewRegular
+                                android:id="@+id/tvCostumeSize"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="8.5"
+                                android:gravity="left|center"
+                                android:hint="Select Size"
+                                android:textColor="@color/black" />
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.5"
+                                android:scaleType="center"
+                                android:src="@drawable/arr_down" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/lightgray" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp" />
+
+                    <LinearLayout
+                        android:id="@+id/linearBodyDim"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <com.chrysalis.widgets.TextViewBold
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:gravity="left|center"
+                            android:text="Body and Dimentions"
+                            android:textColor="@color/activebullets" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:orientation="horizontal"
+                            android:weightSum="10">
+
+                            <EditText
+                                android:id="@+id/etHightFt"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.2"
+                                android:background="@drawable/edt_cellborder"
+                                android:digits="1234567890."
+                                android:gravity="center"
+                                android:imeOptions="actionNext"
+                                android:inputType="number"
+                                android:maxLength="6"
+                                android:nextFocusRight="@+id/etWidth"
+                                android:singleLine="true"
+                                android:textColor="@color/black" />
+
+                            <com.chrysalis.widgets.TextViewRegular
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.8"
+                                android:gravity="center"
+                                android:text="ft"
+                                android:textColor="@color/black" />
+
+                            <EditText
+                                android:id="@+id/etHightIn"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.2"
+                                android:background="@drawable/edt_cellborder"
+                                android:digits="1234567890."
+                                android:gravity="center"
+                                android:imeOptions="actionNext"
+                                android:inputType="number"
+                                android:maxLength="6"
+                                android:nextFocusRight="@+id/etHeight"
+                                android:singleLine="true"
+                                android:textColor="@color/black" />
+
+                            <com.chrysalis.widgets.TextViewRegular
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.8"
+                                android:gravity="center"
+                                android:text="in"
+                                android:textColor="@color/black" />
+
+                            <EditText
+                                android:id="@+id/etWeightLbs"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.2"
+                                android:background="@drawable/edt_cellborder"
+                                android:digits="1234567890."
+                                android:gravity="center"
+                                android:imeOptions="actionNext"
+                                android:inputType="number"
+                                android:maxLength="6"
+                                android:singleLine="true"
+                                android:textColor="@color/black" />
+
+                            <com.chrysalis.widgets.TextViewRegular
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.8"
+                                android:gravity="center"
+                                android:text="lbs"
+                                android:textColor="@color/black" />
+
+                            <EditText
+                                android:id="@+id/etChestIn"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.2"
+                                android:background="@drawable/edt_cellborder"
+                                android:digits="1234567890."
+                                android:gravity="center"
+                                android:imeOptions="actionNext"
+                                android:inputType="number"
+                                android:maxLength="6"
+                                android:singleLine="true"
+                                android:textColor="@color/black" />
+
+                            <com.chrysalis.widgets.TextViewRegular
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.8"
+                                android:gravity="center"
+                                android:text="in"
+                                android:textColor="@color/black" />
+
+                            <EditText
+                                android:id="@+id/etWeistLbs"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.2"
+                                android:background="@drawable/edt_cellborder"
+                                android:digits="1234567890."
+                                android:gravity="center"
+                                android:imeOptions="actionNext"
+                                android:inputType="number"
+                                android:maxLength="6"
+                                android:singleLine="true"
+                                android:textColor="@color/black" />
+
+                            <com.chrysalis.widgets.TextViewRegular
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.8"
+                                android:gravity="center"
+                                android:text="lbs"
+                                android:textColor="@color/black" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:orientation="horizontal"
+                            android:weightSum="10">
+
+                            <com.chrysalis.widgets.TextViewRegular
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:gravity="center"
+                                android:text="Height"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center" />
+
+                            <com.chrysalis.widgets.TextViewRegular
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.3"
+                                android:gravity="center"
+                                android:text="Weight"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.7"
+                                android:gravity="center" />
+
+                            <com.chrysalis.widgets.TextViewRegular
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.3"
+                                android:gravity="center"
+                                android:text="Chest"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.7"
+                                android:gravity="center" />
+
+                            <com.chrysalis.widgets.TextViewRegular
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.3"
+                                android:gravity="center"
+                                android:text="Waist"
+                                android:textColor="@color/black" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/lightgray" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp" />
+
+                    <com.chrysalis.widgets.TextViewBold
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:gravity="left|center"
+                        android:text="Condition"
+                        android:textColor="@color/activebullets" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp" />
+
+                    <LinearLayout
+                        android:id="@+id/llConditionbg"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/green_cell_border"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="2dp"
+                            android:orientation="horizontal"
+                            android:weightSum="7.5">
+
+                            <com.chrysalis.widgets.TextViewBold
+                                android:id="@+id/tvCostumeGood"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2.5"
+                                android:gravity="center"
+                                android:text="Good"
+                                android:textColor="@color/green" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/green" />
+
+                            <com.chrysalis.widgets.TextViewBold
+                                android:id="@+id/tvLikeNew"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2.5"
+                                android:gravity="center"
+                                android:text="Like New"
+                                android:textColor="@color/green" />
+
+                            <com.chrysalis.widgets.TextViewBold
+                                android:id="@+id/tvCostumeExecellent"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2.5"
+                                android:gravity="center"
+                                android:text="Excellent"
+                                android:textColor="@color/green"
+                                android:visibility="gone" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/green" />
+
+                            <com.chrysalis.widgets.TextViewBold
+                                android:id="@+id/tvCostumeBrandNew"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2.5"
+                                android:gravity="center"
+                                android:text="Brand New"
+                                android:textColor="@color/green" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
+
+                    <LinearLayout
+                        android:id="@+id/linearCategoryOption"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.chrysalis.widgets.TextViewBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="left|center|bottom"
+                            android:text="How was the costume cleaned?"
+                            android:textColor="@color/activebullets" />
+
+                        <LinearLayout
+                            android:id="@+id/llOptionbg"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/green_cell_border"
+                            android:orientation="horizontal"
+                            android:weightSum="10">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="2dp"
+                                android:orientation="horizontal"
+                                android:weightSum="7.5">
+
+                                <com.chrysalis.widgets.TextViewBold
+                                    android:id="@+id/tvHandWashed"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2.5"
+                                    android:gravity="center"
+                                    android:text="Hand Washed"
+                                    android:textColor="@color/green" />
+
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/green" />
+
+                                <com.chrysalis.widgets.TextViewBold
+                                    android:id="@+id/tvDryClean"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2.5"
+                                    android:gravity="center"
+                                    android:text="Dry Cleaned"
+                                    android:textColor="@color/green" />
+
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/green" />
+
+                                <com.chrysalis.widgets.TextViewBold
+                                    android:id="@+id/tvMachineWashed"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2.5"
+                                    android:gravity="center"
+                                    android:text="Machine Washed"
+                                    android:textColor="@color/green" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/lightgray" />
+
+                    <com.chrysalis.widgets.TextViewBold
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:gravity="left|center|bottom"
+                        android:text="How would you describe your costume?"
+                        android:textColor="@color/activebullets" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:weightSum="10">
+
+                        <com.chrysalis.widgets.TextViewRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center"
+                            android:text="@string/editCostume"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/green_cell_border"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.8"
+                            android:gravity="center"
+                            android:text="#"
+                            android:textColor="@color/activebullets"
+                            android:textStyle="bold" />
+
+                        <AutoCompleteTextView
+                            android:id="@+id/autoCompleteTextView1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="9.5"
+                            android:backgroundTint="@color/white"
+                            android:ems="10"
+                            android:hint="Anime, Cyberpunk, Lolita"
+                            android:imeOptions="actionDone"
+                            android:singleLine="true"
+                            android:textColorHint="@color/lightgray"
+                            android:textSize="14sp"
+                            android:textStyle="normal" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:id="@+id/tvSearch"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center"
+                            android:text="@string/searchtxt"
+                            android:textColorLink="@color/lightgray"
+                            android:textSize="10sp"
+                            android:textStyle="normal" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="2dp"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:id="@+id/rvMain"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/lightgray"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <com.chrysalis.widgets.TextViewBold
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="6"
+                            android:gravity="left|center"
+                            android:text="Did you make your costume?"
+                            android:textColor="@color/activebullets" />
+
+                        <ImageView
+                            android:id="@+id/ivCostumeYes"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/yes" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Yes" />
+
+                        <ImageView
+                            android:id="@+id/ivCostumeNo"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/no" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="No" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp" />
+
+                    <LinearLayout
+                        android:id="@+id/llCostumeMakeTiming"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <com.chrysalis.widgets.TextViewBold
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="6"
+                            android:gravity="left|center"
+                            android:text="How long did it take?"
+                            android:textColor="@color/black" />
+
+                        <EditText
+                            android:id="@+id/etHour"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:background="@drawable/edt_cellborder"
+                            android:digits="1234567890"
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:paddingLeft="5dp"
+                            android:singleLine="true"
+                            android:text="0"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:text="Hours" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/lightgray" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <com.chrysalis.widgets.TextViewBold
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="6"
+                            android:gravity="left|center"
+                            android:text="Is the costume Film or Theater Quality?"
+                            android:textColor="@color/activebullets" />
+
+                        <ImageView
+                            android:id="@+id/ivQualityYes"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/yes" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Yes" />
+
+                        <ImageView
+                            android:id="@+id/ivQualityNo"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/no" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="No" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp" />
+
+                    <LinearLayout
+                        android:id="@+id/llFilmTheater"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        android:weightSum="10">
+
+                        <com.chrysalis.widgets.TextViewBold
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="6"
+                            android:gravity="left|center"
+                            android:text="Production Name"
+                            android:textColor="@color/black" />
+
+                        <EditText
+                            android:id="@+id/etProdName"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:background="@drawable/edt_cellborder"
+                            android:inputType="text"
+                            android:paddingLeft="5dp"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textSize="16sp" />
+                        <!-- <TextView
+                             android:layout_width="0dp"
+                             android:layout_height="match_parent"
+                             android:layout_weight="2"
+                             android:gravity="center"
+                             android:text="Hours" />-->
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/lightgray" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp" />
+
+                    <com.chrysalis.widgets.TextViewBold
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:gravity="left|center"
+                        android:text="Describe your costume:"
+                        android:textColor="@color/activebullets" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <EditText
+                            android:id="@+id/etCostumeDescription"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/edt_plain"
+                            android:gravity="top|left|center"
+                            android:hint="Be as detailed as possible!"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/lightgray"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/lightgray"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:visibility="gone" />
+
+                    <com.chrysalis.widgets.TextViewBold
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:gravity="left|center"
+                        android:text="Fun Fact:"
+                        android:textColor="@color/activebullets"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        android:weightSum="10">
+
+                        <EditText
+                            android:id="@+id/etFunFact"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/edt_plain"
+                            android:gravity="top|left|center"
+                            android:hint="A little backstory to your costume and the adventures it has experienced"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/lightgray"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/lightgray" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
+
+                    <LinearLayout
+                        android:id="@+id/linearFaq"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <com.chrysalis.widgets.TextViewBold
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:gravity="left|center"
+                            android:text="Frequently Asked Questions"
+                            android:textColor="@color/activebullets" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:orientation="horizontal"
+                            android:weightSum="10">
+
+                            <EditText
+                                android:id="@+id/etFAQ"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/edt_plain"
+                                android:gravity="top|left|center"
+                                android:hint="Create your own custome FAQ to avoid unnecessary inquiries!"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/lightgray"
+                                android:textSize="15sp"
+                                android:textStyle="normal" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="15dp" />
+
+                    <Button
+                        android:id="@+id/btnCosutumeNext"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@drawable/btn_bg"
+                        android:text="Next Step"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="15dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
